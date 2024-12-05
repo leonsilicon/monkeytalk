@@ -4,6 +4,7 @@ import autoprefixer from "autoprefixer";
 import "dotenv/config";
 import PROD_CONFIG from "./vite.config.prod";
 import DEV_CONFIG from "./vite.config.dev";
+import mkcert from "vite-plugin-mkcert";
 
 /** @type {import("vite").UserConfig} */
 const BASE_CONFIG = {
@@ -28,6 +29,7 @@ const BASE_CONFIG = {
       },
     },
     injectHTML(),
+    mkcert(),
   ],
   server: {
     open: process.env.SERVER_OPEN !== "false",

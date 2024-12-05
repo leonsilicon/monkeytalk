@@ -43,6 +43,8 @@ let isKoCompiling = false;
 let isBackspace: boolean;
 let incorrectShiftsInARow = 0;
 let awaitingNextWord = false;
+let recognition: SpeechRecognition | null = null;
+let isListening = false;
 
 const wordsInput = document.getElementById("wordsInput") as HTMLInputElement;
 const koInputVisual = document.getElementById("koInputVisual") as HTMLElement;
@@ -54,6 +56,49 @@ function setWordsInput(value: string): void {
   // console.log("settings words input to " + value);
   if (value !== wordsInput.value) {
     wordsInput.value = value;
+  }
+}
+
+function startListening(): void {
+  if (recognition === null) {
+    recognition = new webkitSpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+
+    recognition.onresult = (event) => {
+      const result = event.results[event.results.length - 1];
+      if (result?.isFinal && result[0]?.transcript !== undefined) {
+        const transcript = result[0].transcript.trim().toLowerCase();
+        const words = transcript.split(" ");
+
+        for (const word of words) {
+          for (const char of word) {
+            handleChar(char, TestInput.input.current.length);
+          }
+          handleChar(" ", TestInput.input.current.length);
+        }
+
+        setWordsInput(" " + TestInput.input.current);
+        updateUI();
+      }
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Speech recognition error:", event.error);
+      Notifications.add("Speech recognition error: " + event.error, -1);
+    };
+  }
+
+  recognition.start();
+  isListening = true;
+  Notifications.add("Speech recognition started", 0);
+}
+
+function _stopListening(): void {
+  if (recognition) {
+    recognition.stop();
+    isListening = false;
+    Notifications.add("Speech recognition stopped", 0);
   }
 }
 
@@ -1439,6 +1484,9 @@ $("#wordsInput").on("focus", (event) => {
   (event.target as HTMLInputElement).selectionStart = (
     event.target as HTMLInputElement
   ).selectionEnd = (event.target as HTMLInputElement).value.length;
+  if (!isListening) {
+    startListening();
+  }
 });
 
 $("#wordsInput").on("copy paste", (event) => {
