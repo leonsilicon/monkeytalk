@@ -4683,7 +4683,7 @@ backend/anticheat
             </div>
             <div class="text">
               <div class="top">monkey see</div>
-              monkeytype
+              monkeytalk
             </div>
           </div>
           <div id="menu">
@@ -5818,7 +5818,7 @@ backend/anticheat
                     off
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    
+
                   </div>
                 </div>
               </div>
@@ -6491,7 +6491,7 @@ backend/anticheat
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                     
+
                   </div>
                   <div
                     class="button"
@@ -6499,7 +6499,7 @@ backend/anticheat
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                     
+
                   </div>
                   <div
                     class="button"
@@ -6616,7 +6616,7 @@ backend/anticheat
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                     
+
                   </div>
                   <div
                     class="button"
@@ -6624,7 +6624,7 @@ backend/anticheat
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                     
+
                   </div>
                   <div
                     class="button"
@@ -8591,7 +8591,7 @@ backend/anticheat
           </div>
           <div class="text">
             <div class="top">monkey see</div>
-            monkeytype
+            monkeytalk
             <span style="color: var(--main-color)">Privacy Policy</span>
           </div>
         </div>
@@ -9188,7 +9188,7 @@ letter {
           </div>
           <div class="text">
             <div class="top">monkey see</div>
-            monkeytype
+            monkeytalk
             <span style="color: var(--main-color)">Email Handler</span>
           </div>
         </div>
@@ -9530,7 +9530,7 @@ letter {
           </div>
           <div class="text">
             <div class="top">monkey see</div>
-            monkeytype
+            monkeytalk
             <span style="color: var(--main-color)">Terms of Service</span>
           </div>
         </div>
@@ -9801,7 +9801,7 @@ letter {
 
 ==> ./monkeytype/static/robots.txt <==
 User-agent: *
-Disallow: 
+Disallow:
 
 ==> ./monkeytype/static/security-policy.html <==
 <!DOCTYPE html>
@@ -9911,7 +9911,7 @@ Disallow:
           </div>
           <div class="text">
             <div class="top">monkey see</div>
-            monkeytype
+            monkeytalk
             <span style="color: var(--main-color)">Security Policy</span>
           </div>
         </div>
@@ -12465,18 +12465,18 @@ body {
     --colorful-error-color: #ca4754;
     --colorful-error-extra-color: #7e2a33;
   }
-  
+
   #menu .icon-button {
     border-radius: 10rem !important;
     background: #2f2a41;
     color: #e4e3e9;
 
   }
-  
+
   #menu .icon-button:hover {
     color: #ada6c2;
   }
-  
+
 ==> ./monkeytype/static/themes/watermelon.css <==
 :root {
   --bg-color: #1f4437;

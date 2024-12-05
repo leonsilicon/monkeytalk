@@ -59,24 +59,114 @@ function setWordsInput(value: string): void {
   }
 }
 
+async function handleBackspace(event: JQuery.KeyDownEvent): Promise<void> {
+  void Sound.playClick();
+  const t = /INPUT|SELECT|TEXTAREA/i;
+  if (!t.test((event.target as unknown as Element).tagName)) {
+    event.preventDefault();
+  }
+
+  if (Config.confidenceMode === "max") {
+    event.preventDefault();
+    return;
+  }
+
+  // if the user backspaces the indentation in a code language we need to empty
+  // the current word so the user is set back to the end of the last line
+  if (
+    Config.codeUnindentOnBackspace &&
+    TestInput.input.current.length > 0 &&
+    /^\t*$/.test(TestInput.input.current) &&
+    Config.language.startsWith("code") &&
+    isCharCorrect(
+      TestInput.input.current.slice(-1),
+      TestInput.input.current.length - 1
+    ) &&
+    (TestInput.input.history[TestWords.words.currentIndex - 1] !=
+      TestWords.words.get(TestWords.words.currentIndex - 1) ||
+      Config.freedomMode)
+  ) {
+    TestInput.input.current = "";
+    await TestUI.updateActiveWordLetters();
+  }
+
+  if (TestInput.input.current.length === 0) {
+    backspaceToPrevious();
+    if (TestInput.input.current) {
+      setWordsInput(" " + TestInput.input.current + " ");
+    }
+  }
+}
+
 function startListening(): void {
+  if (isListening) return;
+
   if (recognition === null) {
+    let currentTranscript = "";
+    let previousTranscript = "";
+
     recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = true;
 
     recognition.onresult = (event) => {
-      const result = event.results[event.results.length - 1];
-      if (result?.isFinal && result[0]?.transcript !== undefined) {
-        const transcript = result[0].transcript.trim().toLowerCase();
-        const words = transcript.split(" ");
+      const newTranscript = Array.from(event.results)
+        .map((result) => result[0]?.transcript.toLowerCase())
+        .join("");
 
-        for (const word of words) {
-          for (const char of word) {
-            handleChar(char, TestInput.input.current.length);
-          }
-          handleChar(" ", TestInput.input.current.length);
+      console.log("Speech recognition - New transcript:", newTranscript);
+      console.log(
+        "Speech recognition - Current transcript:",
+        currentTranscript
+      );
+
+      if (newTranscript !== currentTranscript) {
+        previousTranscript = currentTranscript;
+        currentTranscript = newTranscript;
+
+        console.log(
+          "Speech recognition - Previous transcript:",
+          previousTranscript
+        );
+        console.log(
+          "Speech recognition - Updated current transcript:",
+          currentTranscript
+        );
+
+        // Find first differing character
+        let i = 0;
+        while (
+          i < previousTranscript.length &&
+          i < currentTranscript.length &&
+          previousTranscript[i] === currentTranscript[i]
+        ) {
+          i++;
         }
+
+        console.log(
+          "Speech recognition - First differing character at index:",
+          i
+        );
+
+        // Backspace to differing position
+        while (TestInput.input.current.length > i) {
+          const backspaceEvent = new KeyboardEvent("keydown", {
+            key: "Backspace",
+            code: "Backspace",
+          });
+          document.dispatchEvent(backspaceEvent);
+        }
+
+        // Type new characters
+        for (let j = i; j < currentTranscript.length; j++) {
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          handleChar(currentTranscript[j]!, TestInput.input.current.length);
+        }
+
+        console.log(
+          "Speech recognition - Final input:",
+          TestInput.input.current
+        );
 
         setWordsInput(" " + TestInput.input.current);
         updateUI();
@@ -1077,47 +1167,7 @@ $(document).on("keydown", async (event) => {
 
   //blocking firefox from going back in history with backspace
   if (event.key === "Backspace") {
-    void Sound.playClick();
-    const t = /INPUT|SELECT|TEXTAREA/i;
-    if (
-      !t.test((event.target as unknown as Element).tagName)
-      // if this breaks in the future, call mio and tell him to stop being lazy
-      // (event.target as unknown as KeyboardEvent).disabled ||
-      // (event.target as unknown as Element).readOnly
-    ) {
-      event.preventDefault();
-    }
-
-    if (Config.confidenceMode === "max") {
-      event.preventDefault();
-      return;
-    }
-
-    // if the user backspaces the indentation in a code language we need to empty
-    // the current word so the user is set back to the end of the last line
-    if (
-      Config.codeUnindentOnBackspace &&
-      TestInput.input.current.length > 0 &&
-      /^\t*$/.test(TestInput.input.current) &&
-      Config.language.startsWith("code") &&
-      isCharCorrect(
-        TestInput.input.current.slice(-1),
-        TestInput.input.current.length - 1
-      ) &&
-      (TestInput.input.history[TestWords.words.currentIndex - 1] !=
-        TestWords.words.get(TestWords.words.currentIndex - 1) ||
-        Config.freedomMode)
-    ) {
-      TestInput.input.current = "";
-      await TestUI.updateActiveWordLetters();
-    }
-  }
-
-  if (event.key === "Backspace" && TestInput.input.current.length === 0) {
-    backspaceToPrevious();
-    if (TestInput.input.current) {
-      setWordsInput(" " + TestInput.input.current + " ");
-    }
+    await handleBackspace(event);
   }
 
   if (event.key === "Enter") {

@@ -2,7 +2,7 @@ FROM node:20.16.0-alpine3.19 AS builder
 WORKDIR /app
 
 #ENV
-ENV BACKEND_URL=###MONKEYTYPE_BACKENDURL### RECAPTCHA_SITE_KEY=###RECAPTCHA_SITE_KEY###
+ENV BACKEND_URL=https://backend.monkeytalk.xyz RECAPTCHA_SITE_KEY=6LcYipMqAAAAAKhAV-E-eVGmcmLNE4nQ7rIh9gjf
 
 #COPY
 COPY ["package.json", "pnpm-lock.yaml", "pnpm-workspace.yaml", "turbo.json", "./"]

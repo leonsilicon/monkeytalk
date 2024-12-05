@@ -909,9 +909,12 @@ export async function finish(difficultyFailed = false): Promise<void> {
   ///////// completed event ready
 
   //afk check
-  const kps = TestInput.afkHistory.slice(-5);
-  let afkDetected = kps.every((afk) => afk);
-  if (TestState.bailedOut) afkDetected = false;
+  // const kps = TestInput.afkHistory.slice(-5);
+  // let afkDetected = kps.every((afk) => afk);
+  // if (TestState.bailedOut) afkDetected = false;
+
+  // TODO: fix afk detection for no-speech event
+  const afkDetected = false;
 
   const mode2Number = parseInt(completedEvent.mode2);
 

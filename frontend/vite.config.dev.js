@@ -35,7 +35,7 @@ export default {
     IS_DEVELOPMENT: JSON.stringify(true),
     CLIENT_VERSION: JSON.stringify("DEVELOPMENT_CLIENT"),
     RECAPTCHA_SITE_KEY: JSON.stringify(
-      "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+      "6LcYipMqAAAAAKhAV-E-eVGmcmLNE4nQ7rIh9gjf"
     ),
     QUICK_LOGIN_EMAIL: JSON.stringify(process.env.QUICK_LOGIN_EMAIL),
     QUICK_LOGIN_PASSWORD: JSON.stringify(process.env.QUICK_LOGIN_PASSWORD),

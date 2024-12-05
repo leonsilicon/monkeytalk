@@ -35,7 +35,8 @@ const obj = {
   quoteLength: [1],
   language: "english",
   fontSize: 2,
-  freedomMode: false,
+  // Should be true for speech since we want to freely backspace
+  freedomMode: true,
   difficulty: "normal",
   blindMode: false,
   quickEnd: false,

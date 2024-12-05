@@ -6,7 +6,7 @@
 export const firebaseConfig = {
   apiKey: "###FIREBASE_APIKEY###",
   authDomain: "###FIREBASE_AUTHDOMAIN###",
-  projectId: "###FIREBASE_PROJECTID###",
+  projectId: "monkeytalk-16c05",
   storageBucket: "###FIREBASE_STORAGEBUCKET###",
   messagingSenderId: "###FIREBASE_MESSAGINGSENDERID###",
   appId: "###FIREBASE_APPID###",
