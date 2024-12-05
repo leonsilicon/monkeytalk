@@ -9,19 +9,19 @@
   "quotes": [
     {
       "text": "//a function that generates random gibberish at random length\n\nexport function getGibberish() {\n\tlet randLen = Math.floor(Math.random() * 7) + 1;\n\tlet ret = \"\";\n\tfor (let i = 0; i < randLen; i++) {\n\t\tret += String.fromCharCode(97 + Math.floor(Math.random() * 26));\n\t}\n\treturn ret;\n}",
-      "source": "Monkeytype Sourcecode",
+      "source": "Monkeytalk Sourcecode",
       "id": 1,
       "length": 282
     },
     {
       "text": "export function capitalizeFirstLetter(str) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}",
-      "source": "Monkeytype Sourcecode",
+      "source": "Monkeytalk Sourcecode",
       "length": 98,
       "id": 2
     },
     {
       "text": "export function roundTo2(num) {\n\treturn Math.round((num + Number.EPSILON) * 100) / 100;\n}",
-      "source": "Monkeytype Sourcecode",
+      "source": "Monkeytalk Sourcecode",
       "length": 89,
       "id": 3
     },
@@ -273,7 +273,7 @@
     },
     {
       "text": "/** @type {import('postcss-load-config').Config} */\nconst config = {\n\tparser: \"postcss-scss\",\n\tplugins: [require(\"autoprefixer\")],\n};\n\nmodule.exports = config;",
-      "source": "Monkeytype Sourcecode",
+      "source": "Monkeytalk Sourcecode",
       "length": 159,
       "id": 45
     }

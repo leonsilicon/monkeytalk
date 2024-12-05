@@ -86,8 +86,8 @@ export default {
       injectRegister: "networkfirst",
       registerType: "autoUpdate",
       manifest: {
-        short_name: "Monkeytype",
-        name: "Monkeytype",
+        short_name: "Monkeytalk",
+        name: "Monkeytalk",
         start_url: "/",
         icons: [
           {
@@ -193,7 +193,7 @@ export default {
           //inject variables into sass context
           $fontawesomeBrands: ${sassList(
             fontawesomeClasses.brands
-          )};             
+          )};
           $fontawesomeSolid: ${sassList(fontawesomeClasses.solid)};
 
           ${source}`;

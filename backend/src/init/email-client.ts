@@ -16,11 +16,11 @@ type EmailMetadata = {
 
 const templates: Record<EmailType, EmailMetadata> = {
   verify: {
-    subject: "Verify your Monkeytype account",
+    subject: "Verify your Monkeytalk account",
     templateName: "verification.html",
   },
   resetPassword: {
-    subject: "Reset your Monkeytype password",
+    subject: "Reset your Monkeytalk password",
     templateName: "reset-password.html",
   },
 };
@@ -98,7 +98,7 @@ export async function sendEmail(
   const template = await fillTemplate<typeof templateName>(templateName, data);
 
   const mailOptions = {
-    from: "Monkeytype <noreply@monkeytype.com>",
+    from: "Monkeytalk <noreply@monkeytype.com>",
     to,
     subject: templates[templateName].subject,
     html: template,

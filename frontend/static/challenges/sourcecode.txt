@@ -11,7 +11,7 @@
 
 # About
 
-Monkeytype is a minimalistic and customizable typing test. It features many test modes, an account system to save your typing speed history, and user-configurable features like themes, sounds, a smooth caret, and more.
+Monkeytalk is a minimalistic and customizable typing test. It features many test modes, an account system to save your typing speed history, and user-configurable features like themes, sounds, a smooth caret, and more.
 
 # Features
 
@@ -30,7 +30,7 @@ Monkeytype is a minimalistic and customizable typing test. It features many test
 
 # Discord bot
 
-On the [Monkeytype Discord server](https://www.discord.gg/monkeytype), we added a Discord bot to auto-assign roles on our server. You can find its code over at https://github.com/Miodec/monkey-bot
+On the [Monkeytalk Discord server](https://www.discord.gg/monkeytype), we added a Discord bot to auto-assign roles on our server. You can find its code over at https://github.com/Miodec/monkey-bot
 
 # Bug report or Feature request
 
@@ -3781,7 +3781,7 @@ backend/anticheat
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monkeytype</title>
+    <title>Monkeytalk</title>
     <!-- <link rel="stylesheet" href="css/fa.css" /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
@@ -3815,7 +3815,7 @@ backend/anticheat
       onerror="this.onerror=null;this.href='css/fa.min.css';"
     />
     <link rel="manifest" href="manifest.json" />
-    <meta name="name" content="Monkeytype" />
+    <meta name="name" content="Monkeytalk" />
     <meta name="image" content="https://monkeytype.com/images/mtsocial.png" />
     <meta
       name="description"
@@ -3826,7 +3826,7 @@ backend/anticheat
       content="typing speed test, typing speedtest, typing test, speetest, speed test, typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
     />
     <meta name="author" content="Miodec" />
-    <meta property="og:title" content="Monkeytype" />
+    <meta property="og:title" content="Monkeytalk" />
     <meta property="og:url" content="https://monkeytype.com/" />
     <meta property="og:type" content="website" />
     <meta
@@ -3837,7 +3837,7 @@ backend/anticheat
       property="og:description"
       content="A minimalistic, customisable typing website. Test yourself in various modes, track your progress and improve your typing speed."
     />
-    <meta name="twitter:title" content="Monkeytype" />
+    <meta name="twitter:title" content="Monkeytalk" />
     <meta
       name="twitter:image"
       content="https://monkeytype.com/images/mtsocial.png"
@@ -3945,7 +3945,7 @@ backend/anticheat
         <span>(ctrl/cmd + shift + r on Chromium browsers)</span>
         <span>
           If the website works for a bit but then this screen comes back, clear
-          your cache again and then on Monkeytype open the command line (esc)
+          your cache again and then on Monkeytalk open the command line (esc)
           and search for "Clear SW cache".
         </span>
       </div>
@@ -4486,7 +4486,7 @@ backend/anticheat
     </div>
     <div id="supportMeWrapper" class="popupWrapper hidden">
       <div id="supportMe">
-        <div class="title">Support Monkeytype</div>
+        <div class="title">Support Monkeytalk</div>
         <div class="text">
           Thank you so much for thinking about supporting this project. It would
           not be possible without you and your continued support.
@@ -5379,7 +5379,7 @@ backend/anticheat
               <div class="title">about</div>
               <!-- <h1>about</h1> -->
               <p>
-                Monkeytype is a minimalistic typing test, featuring many test
+                Monkeytalk is a minimalistic typing test, featuring many test
                 modes, an account system to save your typing speed history and
                 user configurable features like themes, a smooth caret and more.
               </p>
@@ -8493,7 +8493,7 @@ backend/anticheat
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy | Monkeytype</title>
+    <title>Privacy Policy | Monkeytalk</title>
     <!-- <link rel="stylesheet" href="css/fa.css" /> -->
     <link rel="stylesheet" href="css/balloon.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -8501,7 +8501,7 @@ backend/anticheat
     <link rel="stylesheet" href="" id="funBoxTheme" />
     <link id="favicon" rel="shortcut icon" href="images/fav.png" />
     <link rel="shortcut icon" href="images/fav.png" />
-    <meta name="name" content="Monkeytype" />
+    <meta name="name" content="Monkeytalk" />
     <meta name="image" content="https://monkeytype.com/mtsocial.png" />
     <meta
       name="description"
@@ -8512,7 +8512,7 @@ backend/anticheat
       content="typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
     />
     <meta name="author" content="Miodec" />
-    <meta property="og:title" content="Monkeytype" />
+    <meta property="og:title" content="Monkeytalk" />
     <meta property="og:url" content="https://monkeytype.com/" />
     <meta property="og:type" content="website" />
     <meta
@@ -8521,7 +8521,7 @@ backend/anticheat
     />
     <meta property="og:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="theme-color" content="#e2b714" id="metaThemeColor" />
-    <meta name="twitter:title" content="Monkeytype" />
+    <meta name="twitter:title" content="Monkeytalk" />
     <meta name="twitter:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
@@ -8603,7 +8603,7 @@ backend/anticheat
 
         <p>Effective date: September 8, 2021</p>
         <p>
-          Thanks for trusting Monkeytype ('Monkeytype', 'we', 'us', 'our') with
+          Thanks for trusting Monkeytalk ('Monkeytalk', 'we', 'us', 'our') with
           your personal information! We take our
           responsibility to you very seriously, and so this Privacy Statement
           describes how we handle your data.
@@ -8656,7 +8656,7 @@ backend/anticheat
         </ul>
 
         <h1 id="Data_Collection">What data do we collect?</h1>
-        <p>Monkeytype collects the following data:</p>
+        <p>Monkeytalk collects the following data:</p>
         <ul>
           <li>Email</li>
           <li>Username</li>
@@ -8679,7 +8679,7 @@ backend/anticheat
         </ul>
 
         <h1 id="Data_Usage">How will we use your data?</h1>
-        <p>Monkeytype collects your data so that we can:</p>
+        <p>Monkeytalk collects your data so that we can:</p>
 
         <ul>
           <li>
@@ -8694,44 +8694,44 @@ backend/anticheat
         </ul>
 
         <h1 id="Data_Storage">How do we store your data?</h1>
-        <p>Monkeytype securely stores your data using Firebase Firestore.</p>
+        <p>Monkeytalk securely stores your data using Firebase Firestore.</p>
 
         <h1 id="Data_Protection_Rights">
           What are your data protection rights?
         </h1>
         <p>
-          Monkeytype would like to make sure you are fully aware of all of your
+          Monkeytalk would like to make sure you are fully aware of all of your
           data protection rights. Every user is entitled to the following:
         </p>
         <ul>
           <li>
-            The right to access – You have the right to request Monkeytype for
+            The right to access – You have the right to request Monkeytalk for
             copies of your personal data. We may limit the number of times this
             request can be made to depending on the size of the request.
           </li>
           <li>
             The right to rectification – You have the right to request that
-            Monkeytype correct any information you believe is inaccurate. You
-            also have the right to request Monkeytype to complete the
+            Monkeytalk correct any information you believe is inaccurate. You
+            also have the right to request Monkeytalk to complete the
             information you believe is incomplete.
           </li>
           <li>
-            The right to erasure – You have the right to request that Monkeytype
+            The right to erasure – You have the right to request that Monkeytalk
             erase your personal data, under certain conditions.
           </li>
           <li>
             The right to restrict processing – You have the right to request
-            that Monkeytype restrict the processing of your personal data, under
+            that Monkeytalk restrict the processing of your personal data, under
             certain conditions.
           </li>
           <li>
             The right to object to processing – You have the right to object to
-            Monkeytype processing of your personal data, under certain
+            Monkeytalk processing of your personal data, under certain
             conditions.
           </li>
           <li>
             The right to data portability – You have the right to request that
-            Monkeytype transfer the data that we have collected to another
+            Monkeytalk transfer the data that we have collected to another
             organization, or directly to you, under certain conditions.
           </li>
         </ul>
@@ -8739,7 +8739,7 @@ backend/anticheat
 
         <h1 id="Log_Data">What log data do we collect?</h1>
         <p>
-          Like most websites, Monkeytype collects information that your browser
+          Like most websites, Monkeytalk collects information that your browser
           sends whenever you visit the website. This data may include internet
           protocol (IP) addresses, browser type, Internet Service Provider
           (ISP), date and time stamp, referring/exit pages, and time spent on
@@ -8769,7 +8769,7 @@ backend/anticheat
 
         <h1 id="Usage_of_Cookies">How do we use cookies?</h1>
         <p>
-          Monkeytype uses cookies in a range of ways to improve your experience
+          Monkeytalk uses cookies in a range of ways to improve your experience
           on our website, including:
         </p>
         <ul>
@@ -8780,7 +8780,7 @@ backend/anticheat
         <h1 id="Types_of_Cookies_Used">What types of cookies do we use?</h1>
         <p>
           There are a number of different types of cookies; however, our website
-          uses functionality cookies. Monkeytype uses these cookies so we
+          uses functionality cookies. Monkeytalk uses these cookies so we
           recognize you on our website and remember your previously selected
           settings.
         </p>
@@ -8793,7 +8793,7 @@ backend/anticheat
         </p>
         <h1 id="External_Websites">Privacy policies of other websites</h1>
         <p>
-          Monkeytype contains links to other external websites.
+          Monkeytalk contains links to other external websites.
           <b>
             <u>
               Our privacy policy only applies to our website, so if you click on
@@ -8804,8 +8804,8 @@ backend/anticheat
 
         <h1 id="Privacy_Policy_Modifications">Changes to our privacy policy</h1>
         <p>
-          Monkeytype keeps its privacy policy under regular review and places
-          any updates on this web page. The Monkeytype privacy policy may be
+          Monkeytalk keeps its privacy policy under regular review and places
+          any updates on this web page. The Monkeytalk privacy policy may be
           subject to change at any given time without notice. This privacy
           policy was last updated on 22 April 2021.
         </p>
@@ -8813,7 +8813,7 @@ backend/anticheat
 
         <h1 id="Contact_Info">How to contact us</h1>
         <p>
-          If you have any questions about Monkeytype’s privacy policy, the data
+          If you have any questions about Monkeytalk’s privacy policy, the data
           we hold on you, or you would like to exercise one of your data
           protection rights, please do not hesitate to contact us.
         </p>
@@ -9054,7 +9054,7 @@ letter {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Handler | Monkeytype</title>
+    <title>Email Handler | Monkeytalk</title>
     <!-- <link rel="stylesheet" href="css/fa.css" /> -->
     <link rel="stylesheet" href="css/balloon.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -9069,7 +9069,7 @@ letter {
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <meta name="name" content="Monkeytype" />
+    <meta name="name" content="Monkeytalk" />
     <meta name="image" content="https://monkeytype.com/mtsocial.png" />
     <meta
       name="description"
@@ -9080,7 +9080,7 @@ letter {
       content="typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
     />
     <meta name="author" content="Miodec" />
-    <meta property="og:title" content="Monkeytype" />
+    <meta property="og:title" content="Monkeytalk" />
     <meta property="og:url" content="https://monkeytype.com/" />
     <meta property="og:type" content="website" />
     <meta
@@ -9089,7 +9089,7 @@ letter {
     />
     <meta property="og:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="theme-color" content="#e2b714" id="metaThemeColor" />
-    <meta name="twitter:title" content="Monkeytype" />
+    <meta name="twitter:title" content="Monkeytalk" />
     <meta name="twitter:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
@@ -9379,7 +9379,7 @@ letter {
             case "resetPassword":
               // Display reset password handler and UI.
               $(".logo .text span").text("Reset Password");
-              document.title = "Reset Password | Monkeytype";
+              document.title = "Reset Password | Monkeytalk";
               showResetPassword();
               break;
             case "recoverEmail":
@@ -9388,7 +9388,7 @@ letter {
               break;
             case "verifyEmail":
               $(".logo .text span").text("Verify Email");
-              document.title = "Verify Email | Monkeytype";
+              document.title = "Verify Email | Monkeytalk";
               // Display email verification handler and UI.
               handleVerifyEmail(actionCode, continueUrl);
               break;
@@ -9432,7 +9432,7 @@ letter {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms of Service | Monkeytype</title>
+    <title>Terms of Service | Monkeytalk</title>
     <!-- <link rel="stylesheet" href="css/fa.css" /> -->
     <link rel="stylesheet" href="css/balloon.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -9440,7 +9440,7 @@ letter {
     <link rel="stylesheet" href="" id="funBoxTheme" />
     <link id="favicon" rel="shortcut icon" href="images/fav.png" />
     <link rel="shortcut icon" href="images/fav.png" />
-    <meta name="name" content="Monkeytype" />
+    <meta name="name" content="Monkeytalk" />
     <meta name="image" content="https://monkeytype.com/mtsocial.png" />
     <meta
       name="description"
@@ -9451,7 +9451,7 @@ letter {
       content="typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
     />
     <meta name="author" content="Miodec" />
-    <meta property="og:title" content="Monkeytype" />
+    <meta property="og:title" content="Monkeytalk" />
     <meta property="og:url" content="https://monkeytype.com/" />
     <meta property="og:type" content="website" />
     <meta
@@ -9460,7 +9460,7 @@ letter {
     />
     <meta property="og:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="theme-color" content="#e2b714" id="metaThemeColor" />
-    <meta name="twitter:title" content="Monkeytype" />
+    <meta name="twitter:title" content="Monkeytalk" />
     <meta name="twitter:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
@@ -9559,7 +9559,7 @@ letter {
           misuse this site.
         </p>
         <p>
-          Monkeytype reserves the right to remove or disable any account or any
+          Monkeytalk reserves the right to remove or disable any account or any
           other content on this site at any time for any reason, without prior
           notice to you, if we believe that you have violated this agreement.
         </p>
@@ -9601,7 +9601,7 @@ letter {
         <ol>
           <li>
             harass, abuse, threaten, or incite violence towards any individual
-            or group, including other Users and Monkeytype contributors;
+            or group, including other Users and Monkeytalk contributors;
           </li>
           <li>
             use our servers for any form of excessive automated bulk activity
@@ -9617,7 +9617,7 @@ letter {
           <li>
             falsely impersonate any person or entity, including any of our
             contributors, misrepresent your identity or the site's purpose, or
-            falsely associate yourself with Monkeytype;
+            falsely associate yourself with Monkeytalk;
           </li>
           <li>
             violate the privacy of any third party, such as by posting another
@@ -9638,7 +9638,7 @@ letter {
         </ol>
         <p>
           Without limiting the foregoing, you will not transmit or post any
-          content anywhere on the Services that violates any laws. Monkeytype
+          content anywhere on the Services that violates any laws. Monkeytalk
           absolutely does not tolerate engaging in activity that significantly
           harms our Users. We will resolve disputes in favor of protecting our
           Users as a whole.
@@ -9666,10 +9666,10 @@ letter {
         un-permitted ways. While accessing or using the Services, you may not:
         <ol>
           <li>use bots, hacks, or cheats while using our site;</li>
-          <li>create manual requests to Monkeytype servers;</li>
+          <li>create manual requests to Monkeytalk servers;</li>
           <li>
             tamper with or use non-public areas of the Services, or the computer
-            or delivery systems of Monkeytype and/or its service providers;
+            or delivery systems of Monkeytalk and/or its service providers;
           </li>
           <li>
             probe, scan, or test any system or network (particularly for
@@ -9677,10 +9677,10 @@ letter {
             security or authentication measures, or search or attempt to access
             or search the Services by any means (automated or otherwise) other
             than through our currently available, published interfaces that are
-            provided by Monkeytype (and only pursuant to those terms and
+            provided by Monkeytalk (and only pursuant to those terms and
             conditions), unless you have been specifically allowed to do so in a
-            separate agreement with Monkeytype, Inc., or unless specifically
-            permitted by Monkeytype, Inc.'s robots.txt file or other robot
+            separate agreement with Monkeytalk, Inc., or unless specifically
+            permitted by Monkeytalk, Inc.'s robots.txt file or other robot
             exclusion mechanisms;
           </li>
           <li>
@@ -9708,11 +9708,11 @@ letter {
           </li>
         </ol>
         <h1>Links</h1>
-        Monkeytype is not responsible for the contents of any linked sites. The
+        Monkeytalk is not responsible for the contents of any linked sites. The
         use of any linked website is at the user's own risk.
 
         <h1>Changes</h1>
-        Monkeytype may revise these Terms of Service for its Website at any time
+        Monkeytalk may revise these Terms of Service for its Website at any time
         without prior notice. By using this Website, you are agreeing to be
         bound by the current version of these Terms of Service.
         <h1>Disclaimer</h1>
@@ -9752,7 +9752,7 @@ letter {
         </p>
         <h1>Contact</h1>
         <p>
-          If you have any questions about Monkeytype’s privacy policy, the data
+          If you have any questions about Monkeytalk’s privacy policy, the data
           we hold on you, or you would like to exercise one of your data
           protection rights, please do not hesitate to contact us.
         </p>
@@ -9809,7 +9809,7 @@ Disallow:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Security Policy | Monkeytype</title>
+    <title>Security Policy | Monkeytalk</title>
     <!-- <link rel="stylesheet" href="css/fa.css" /> -->
     <link rel="stylesheet" href="css/balloon.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -9817,7 +9817,7 @@ Disallow:
     <link rel="stylesheet" href="" id="funBoxTheme" />
     <link id="favicon" rel="shortcut icon" href="images/fav.png" />
     <link rel="shortcut icon" href="images/fav.png" />
-    <meta name="name" content="Monkeytype" />
+    <meta name="name" content="Monkeytalk" />
     <meta name="image" content="https://monkeytype.com/mtsocial.png" />
     <meta
       name="description"
@@ -9828,7 +9828,7 @@ Disallow:
       content="typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
     />
     <meta name="author" content="Miodec" />
-    <meta property="og:title" content="Monkeytype" />
+    <meta property="og:title" content="Monkeytalk" />
     <meta property="og:url" content="https://monkeytype.com/" />
     <meta property="og:type" content="website" />
     <meta
@@ -9837,7 +9837,7 @@ Disallow:
     />
     <meta property="og:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="theme-color" content="#e2b714" id="metaThemeColor" />
-    <meta name="twitter:title" content="Monkeytype" />
+    <meta name="twitter:title" content="Monkeytalk" />
     <meta name="twitter:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
@@ -9918,7 +9918,7 @@ Disallow:
       </div>
       <div id="middle">
         <p>
-          We take the security and integrity of Monkeytype very seriously. If
+          We take the security and integrity of Monkeytalk very seriously. If
           you have found a vulnerability, please report it
           <abbr title="As Soon As Possible">ASAP</abbr>
           so we can quickly remediate the issue.
@@ -9937,7 +9937,7 @@ Disallow:
         <h1 id="Vulnerability_Disclosure">How to Disclose a Vulnerability</h1>
         <p>
           For vulnerabilities that impact the confidentiality, integrity, and
-          availability of Monkeytype services, please send your disclosure via
+          availability of Monkeytalk services, please send your disclosure via
           (1)
           <a href="mailto:jack@monkeytype.com">email</a>
           , or (2) ping
@@ -9950,7 +9950,7 @@ Disallow:
           </span>
           on the
           <a href="https://www.discord.gg/monkeytype">
-            Monkeytype Discord server in the #development channel
+            Monkeytalk Discord server in the #development channel
           </a>
           and he can discuss the situation with you further in private. For
           non-security related platform bugs, follow the bug submission

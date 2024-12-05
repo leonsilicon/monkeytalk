@@ -65,7 +65,7 @@ body:
   - type: textarea
     attributes:
       label: Account name
-      description: Your Monkeytype account name.
+      description: Your Monkeytalk account name.
       placeholder: |
         Miodec
     validations:

@@ -84,7 +84,7 @@ export async function update(): Promise<void> {
 
     // if (DB.getSnapshot()?.isPremium === false) {
     //   text.html(
-    //     `<br>Want to load up to ${limits?.premiumUser} results and gain access to more perks? Join Monkeytype Premium.<br>`
+    //     `<br>Want to load up to ${limits?.premiumUser} results and gain access to more perks? Join Monkeytalk Premium.<br>`
     //   );
     // }
   }

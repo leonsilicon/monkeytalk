@@ -24,9 +24,9 @@ export function getOpenApi(): OpenAPIObject {
     {
       openapi: "3.1.0",
       info: {
-        title: "Monkeytype API",
+        title: "Monkeytalk API",
         description:
-          "Documentation for the endpoints provided by the Monkeytype API server.\n\nNote that authentication is performed with the Authorization HTTP header in the format `Authorization: ApeKey YOUR_APE_KEY`\n\nThere is a rate limit of `30 requests per minute` across all endpoints with some endpoints being more strict. Rate limit rates are shared across all ape keys.",
+          "Documentation for the endpoints provided by the Monkeytalk API server.\n\nNote that authentication is performed with the Authorization HTTP header in the format `Authorization: ApeKey YOUR_APE_KEY`\n\nThere is a rate limit of `30 requests per minute` across all endpoints with some endpoints being more strict. Rate limit rates are shared across all ape keys.",
         version: "2.0.0",
         termsOfService: "https://monkeytype.com/terms-of-service",
         contact: {

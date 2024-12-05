@@ -17,7 +17,7 @@ function addSwaggerMiddlewares(app: Application): void {
 
   app.use(
     getSwaggerMiddleware({
-      name: "Monkeytype API",
+      name: "Monkeytalk API",
       uriPath: "/stats",
       authentication: !isDevEnvironment(),
       apdexThreshold: 100,

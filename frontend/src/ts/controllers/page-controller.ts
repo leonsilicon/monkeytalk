@@ -85,7 +85,7 @@ export async function change(
           } else {
             Misc.updateTitle(
               Strings.capitalizeFirstLetterOfEachWord(nextPage.name) +
-                " | Monkeytype"
+                " | Monkeytalk"
             );
           }
           Focus.set(false);

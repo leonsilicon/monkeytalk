@@ -1,4 +1,4 @@
-# Monkeytype Self Hosting
+# Monkeytalk Self Hosting
 
 <!-- TOC ignore:true -->
 
@@ -6,7 +6,7 @@
 
 <!-- TOC -->
 
-- [Monkeytype Self Hosting](#monkeytype-self-hosting)
+- [Monkeytalk Self Hosting](#monkeytype-self-hosting)
     - [Table of contents](#table-of-contents)
     - [Prerequisites](#prerequisites)
     - [Quickstart](#quickstart)
@@ -38,7 +38,7 @@
 
 ## Account System
 
-User signup/login is disabled by default. To allow users to signup you'll need to setup a Firebase project. 
+User signup/login is disabled by default. To allow users to signup you'll need to setup a Firebase project.
 Stop the running docker containers using `docker compose down` before making any changes.
 
 ### Setup Firebase
@@ -49,7 +49,7 @@ Stop the running docker containers using `docker compose down` before making any
   - uncheck "enable google analytics"
 - enable authentication
   - open the [firebase console](https://console.firebase.google.com/) and open your project
-  - go to `Authentication > Sign-in method`  
+  - go to `Authentication > Sign-in method`
   - enable `Email/Password` and save
 - generate service account
   - open the project settings by clicking the `⚙` icon on the sidebar and `Project settings`
@@ -71,7 +71,7 @@ Stop the running docker containers using `docker compose down` before making any
   - if there is no app in your project create a new web-app `</>`
     - nickname `monkeytype`
     - uncheck `set up firebase hosting`
-    - click `Register app` 
+    - click `Register app`
    - select your app and select `Config` for `SDK setup and configuration`
    - it will display sth like this:
         ```
@@ -113,12 +113,12 @@ Stop the running docker containers using `docker compose down` before making any
 - [create](https://www.google.com/recaptcha/admin/create) a new recaptcha token
     - label: monkeytype
     - type: v2
-    - domain: the domain of the frontend 
+    - domain: the domain of the frontend
 - update the `.env` file with the site key from the previous step
     ```
     RECAPTCHA_SITE_KEY="your site key"
     RECAPTCHA_SECRET="your secret key"
-    ``` 
+    ```
 
 
 ## Enable daily leaderboards
@@ -162,7 +162,7 @@ Contains your firebase config, only needed if you want to allow users to signup.
 
 ### backend-configuration.json
 
-Configuration of the backend. 
+Configuration of the backend.
 
 If you don't want to update this file manually you can
 
